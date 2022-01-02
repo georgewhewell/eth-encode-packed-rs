@@ -11,5 +11,5 @@ keywords = ["ethereum", "eth", "abi", "solidity"]
 description = "Easy to use replica of Solidity abi.encodePacked."
 
 [dependencies]
-ethabi = "14.1.0"
+ethabi = { git = "https://github.com/rust-ethereum/ethabi", branch = "master", default-features = false, features = ["full-serde", "rlp"] }
 hex = "0.4.3"
